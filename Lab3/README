@@ -1,0 +1,46 @@
+1. A brief summary of what you accomplished and what (if any) parts you did not
+complete or bugs that you are aware of but have not fixed.
+
+Implemented both insertion sort and merge sort to be able to rearrange a set of numbers from lowest to 
+highest. With everything working as expected.
+
+2. Analysis (including equations for number of moves, swaps and compares as a
+function of n) for the best-, average- and worst-case behaviors of InsertionSort and
+MergeSort)
+
+Insertion Sort:
+
+best case: The array is entered already sorted, meaning the the inner loop will not run. 
+The elements are compared once, giving the number of camparsions is (n-1) and the swaps 
+being zero(as everything is alreay sorted) The time complexity equation for the best case is O(n).
+Example: (1, 2, 3, 4, 5)
+Comparisons: 4
+Swaps: 0
+Copy operations: 4
+
+Worst: The array is entered in reverse sorted order, meaning that each element must be compared
+ to each other element in the array. causing the both loops to run through the entire array giving 
+ the time complexity equation for the worst case is O(n^2)
+Example: (5, 4, 3, 2, 1)
+Comparisons: 14
+Swaps: 10
+Copy operations: 4
+
+Average case: The array is eneterd in randomly, meaning the number of comparsion can range greatly, 
+since this array is somewhat random, some part could be already sorted, causing of this we know that
+ the time compexity must be better than the worst case. Thus, the time compexity for average case would be O(n^2)
+Example: (4, 2, 5, 3, 1)
+Comparisons: 11
+Swaps: 7
+Copy operations: 4
+
+Merge Sort: 
+
+Merge Sort's algorithm is a divide and conquer sorting algorithm, that will split the main array into 
+sub-arrays repeatedly through recursion. Comparing and combining until we get back to one sorted 
+array, resulting in zero swaps. This behaviour causes the time compexity to be the same across Best, 
+worst, and average. The splitting occurrs at log n level since the array size is halved each time, 
+hence the time compexity of this algorithm to be O(nlog(n)). Similar to insertion sort the best case 
+would be a sorted array, worst case would be reversed sorted array and average would be a randomly 
+sorted array. 
+S
