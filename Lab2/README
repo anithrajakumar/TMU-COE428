@@ -1,0 +1,16 @@
+Everything worked. As expect we are able to take in no arguments, 1 argument and 
+3 argument and we are still about to perform the algorithm 
+
+Q1 > towers(4, 2, 1), we can see from the algorithm that the disk count will decrease by one, 
+     and that the spare will be 6 - 3 - 2 giving us the out we expect.
+
+Q2 > we are able to use the formula (2^n)-1 to find the number of empty invocations or we could 
+    simply count them, in doing so we obtain 31 recursive calls.
+
+Q3 > The top disk of the tower will be moved from pin 2 to pin 3
+
+Q4 > towers(4, 1, 3), we can see that towers(n-1, spare, dest) gets called and that the values for 
+     this are 5-1, 1, 3 giving us the answer we get.
+
+Q5 > if towers(8, 1, 2) were to be called we can use the formula (2^n)-1 to find the number of lines, 
+     giving us the value of 255 lines to move one tower from one to pin to another. 
